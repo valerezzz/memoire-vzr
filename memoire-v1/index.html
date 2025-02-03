@@ -10,68 +10,88 @@
   </head>
   <body>
     <div id="app" class="app">
-      <div class="container app_index">
-        <ul>
-          <li>
-            <a href="#prologue">Prologue</a>
-          </li>
-          <li>
-            <a href="#introduction">Introduction</a>
-          </li>
-          <li>
-            <a href="#evolution">Evolution des espaces et modes de rencontre</a>
-            <ul>
-              <li>
-                <a href="#evolution_1"
-                  >Rencontres traditionnelles et unions établies par des règles
-                  sociales strictes
-                </a>
-              </li>
-              <li>
-                <a href="#evolution_2"
-                  >Évolution des dynamiques sociales et émergence de nouvelles
-                  formes de rencontres
-                </a>
-              </li>
-              <li>
-                <a href="#evolution_3">
-                  Arrivée d’Internet et des espaces de sociabilité numérique
-                </a>
-              </li>
-              <li>
-                <a href="#evolution_4">
-                  Le rôle de l’arrivée de l’iPhone et des applications dans la
-                  quête de l’amour Fin des années 2000
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#science">Science du matching et le rôle de l'interface</a>
-            <ul>
-              <li>
-                <a href="#science_1">Algorithmes</a>
-              </li>
-              <li>
-                <a href="#science_2">Design d'interface</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#conclusion">Conclusion</a>
-          </li>
-        </ul>
+      <!---------------DEBUT HEADER---------------->
+      <div class="app_header">
+        <div class="header_content">
+          <div id="index-button">
+            <h1>Index</h1>
+          </div>
+          <h1>Rencontres (im)matérielles</h1>
+          <div id="info-button">
+            <h1>Infos</h1>
+          </div>
+        </div>
       </div>
+      <!---------------FIN HEADER---------------->
+      <!---------------DEBUT INDEX---------------->
+      <div class="app_index" id="index">
+        <div class="index_content">
+          <ul class="index_list">
+            <li>
+              <a href="#prologue">Prologue</a>
+            </li>
+            <li>
+              <a href="#introduction">Introduction</a>
+            </li>
+            <li>
+              <a href="#evolution"
+                >Evolution des espaces et modes de rencontre</a
+              >
+              <ul class="index_sublist">
+                <li>
+                  <a href="#evolution_1"
+                    >Rencontres traditionnelles et unions établies par des
+                    règles sociales strictes
+                  </a>
+                </li>
+                <li>
+                  <a href="#evolution_2"
+                    >Évolution des dynamiques sociales et émergence de nouvelles
+                    formes de rencontres
+                  </a>
+                </li>
+                <li>
+                  <a href="#evolution_3">
+                    Arrivée d’Internet et des espaces de sociabilité numérique
+                  </a>
+                </li>
+                <li>
+                  <a href="#evolution_4">
+                    Le rôle de l’arrivée de l’iPhone et des applications dans la
+                    quête de l’amour Fin des années 2000
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#science"
+                >Science du matching et le rôle de l'interface</a
+              >
+              <ul class="index_sublist">
+                <li>
+                  <a href="#science_1">Algorithmes</a>
+                </li>
+                <li>
+                  <a href="#science_2">Design d'interface</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#conclusion">Conclusion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---------------FIN INDEX---------------->
+      <!---------------DEBUT MAIN---------------->
       <div class="app_main">
-        <div class="container app_header">
-          <div class="header_content">
+        <div class="container app_content" id="part-1">
+          <div class="content_title">
             <h1>La rencontre amoureuse à l'ère du numérique</h1>
           </div>
-        </div>
-        <div class="container app_content">
-          <div class="section content_medium">
-            <div class="content_title">
-              <h2>Prologue</h2>
+          <div class="content_medium">
+            <div class="content_number">
+              <p>0.0.0</p>
             </div>
             <div class="content_text">
               <p>
@@ -79,66 +99,425 @@
                 discussion a définitivement fermé.
               </p>
               <p>
-                Vingt-cinq ans plus tôt mes parents s’y étaient rencontrés alors
-                qu’ils se trouvaient à 660km l’un de l’autre. Le destin a décidé
-                de les mettre en relation malgré le fait qu’ils ne venaient ni
-                du même pays, ni du même milieu professionnel ou culturel. Ils
-                ne partageaient en outre pas les même centres d’intérêts, ni les
-                mêmes convictions politiques. Je pense qu’aujourd’hui, un
-                algorithme n’aurait même pas essayé de les mettre en relation.
-                Rien ne les prédisposait à tomber amoureux et à fonder une
-                famille tant ils étaient différents.
+                <span></span>Vingt-cinq ans plus tôt mes parents s’y étaient
+                rencontrés alors qu’ils se trouvaient à 660km l’un de l’autre.
+                Le destin a décidé de les mettre en relation malgré le fait
+                qu’ils ne venaient ni du même pays, ni du même milieu
+                professionnel ou culturel. Ils ne partageaient en outre pas les
+                même centres d’intérêts, ni les mêmes convictions politiques. Je
+                pense qu’aujourd’hui, un algorithme n’aurait même pas essayé de
+                les mettre en relation.
               </p>
               <p>
-                Cependant ils avaient un point en commun. Fait encore rare en
-                1999, ils possédaient tous les deux un ordinateur avec une
-                connexion Internet et un numéro ICQ.
+                <span></span>Cependant ils avaient un point en commun. Fait
+                encore rare en 1999, ils possédaient tous les deux un ordinateur
+                avec une connexion Internet et un numéro ICQ.
               </p>
               <p>
-                Sans l’arrivée d’Internet mes parents ne se seraient
-                probablement jamais rencontrés, il n’y aurait donc eu personne
-                derrière ce clavier pour écrire ce mémoire.
+                <span></span>Sans l’arrivée d’Internet mes parents ne se
+                seraient probablement jamais rencontrés, il n’y aurait donc eu
+                personne derrière ce clavier pour écrire ce mémoire.
               </p>
             </div>
           </div>
-          <div class="section content_small">
-            <div class="content_title">
-              <h2>Prologue</h2>
+
+          <div class="content_small">
+            <div class="content_number">
+              <p>0.0.0</p>
             </div>
             <div class="content_text">
+              <div class="content_title">
+                <h2>Introduction</h2>
+              </div>
               <p>
-                Le 26 juin 2024, ICQ, l’un des premiers espaces virtuels de
-                discussion a définitivement fermé.
+                La démocratisation de l'arrivée des ordinateurs avec internet
+                dans les foyers ont permis la popularisation des plateformes de
+                messagerie instantanés. 1996 ils étaient plus de 36 millions de
+                personnes à être connectés sur le réseau internet. En
+                comparaison, nous sommes aujourd'hui à plus de 5,3 milliards.
               </p>
               <p>
-                Vingt-cinq ans plus tôt mes parents s’y étaient rencontrés alors
-                qu’ils se trouvaient à 660km l’un de l’autre. Le destin a décidé
-                de les mettre en relation malgré le fait qu’ils ne venaient ni
-                du même pays, ni du même milieu professionnel ou culturel. Ils
-                ne partageaient en outre pas les même centres d’intérêts, ni les
-                mêmes convictions politiques. Je pense qu’aujourd’hui, un
-                algorithme n’aurait même pas essayé de les mettre en relation.
-                Rien ne les prédisposait à tomber amoureux et à fonder une
-                famille tant ils étaient différents.
+                <span></span>Donc fait encore “rare” en 1998 Mes 2 parents
+                possédaient tous les deux un ordinateur ainsi qu'une connexion
+                internet. Après leurs divorces respectifs ils ont rejoint tous
+                les deux les plateformes de messageries instantanées, notamment
+                sur ICQ, où il se sont rencontrés. Mon père s’était acheté un
+                modèle de chez Compaq et ma mère avait opté pour un ordinateur
+                Gateway dont l’on peut voir dans le motif du packaging une sorte
+                de signe annonciateur de sa future venue en Suisse.
               </p>
               <p>
-                Cependant ils avaient un point en commun. Fait encore rare en
-                1999, ils possédaient tous les deux un ordinateur avec une
-                connexion Internet et un numéro ICQ.
+                <span></span>Les plateformes de messageries instantanées ont
+                permis pour la première fois de chatter en temps réel avec des
+                personnes à distance, ils offraient la possibilité de dépasser
+                les frontières géographiques. Des plateformes comme ICQ (I seek
+                you) ou encore AOL Instant Messenger se sont imposées sur le
+                marché de la communication et ont permis la démocratisation de
+                ces services qui avaient l’avantage d’être gratuits,
+                contrairement au téléphone. Dans les années 2000 la célèbre
+                plateforme MSN Messenger deviendra une référence avec ses
+                émoticônes animés et son fameux wizz. L’utilisateur pouvait
+                “wizzer” son correspondant, c'est-à-dire faire vibrer la fenêtre
+                celui-ci pour le rappeler de regarder la conversation.
               </p>
               <p>
-                Sans l’arrivée d’Internet mes parents ne se seraient
-                probablement jamais rencontrés, il n’y aurait donc eu personne
-                derrière ce clavier pour écrire ce mémoire.
+                <span></span>Ces plateformes sont les ancêtres de services comme
+                Whatsapp ou encore Messenger qui sont aujourd’hui utilisés de
+                tous.
+              </p>
+              <p>
+                <span></span>Avant l'arrivée d’ICQ et d’AIM ils existaient des
+                plateformes de communication plus complexes dans leur
+                fonctionnement qui était réservé à des groupes de personnes
+                restreints comme les chercheurs et les passionnés
+                d'informatique.
+              </p>
+              <p>
+                <span></span>La particularité d’ICQ Une des premières
+                plateformes qui permettait à ses utilisateurs de chatter avec
+                des personnes inconnues de manière aléatoire. L’interface
+                proposait une fonction qui s’appelait chat random, cette
+                fonction mettait l’utilisateur en relation directe avec une des
+                personnes qui se trouvaient alors en ligne.
+              </p>
+              <!-- </div>
+            <div class="content_concept">
+              <div class="concept_left">
+                <h3>Concept :</h3>
+              </div>
+              <div class="concept_right">
+                <h3>Algorithmes</h3>
+                <p>
+                  Sur ICQ chaque utilisateur avait comme identifiant une suite
+                  de chiffre unique. Cet identifiant était tout simplement
+                  appelé “numéro ICQ”, il permettait un certain niveau
+                  d’anonymat pour la personne qui se trouvait derrière le
+                  numéro. Sur ICQ Il n’y avait donc pas de photo de profil ni de
+                  prénom/pseudo, seuls les échanges par textes écrits
+                  permettaient de se démarquer du reste des utilisateurs. On
+                  observe une retour de l’écrit et de la relation épistolaire,
+                  il y a des gens qui n’ont jamais autant écrit qu’à cette
+                  époque.
+                </p>
+                <p>
+                  <span></span>Ces plateformes n’étaient pas destinées en
+                  premier lieu à la création de relations matrimoniales. Mais
+                  comme pour les agences matrimoniales, les couples qui se
+                  rencontraient via ces plateformes de discussions
+                  dématérialisées étaient perçues comme des rencontres bizarres.
+                </p>
+                <p>
+                  <span></span>La même année que mes parents se sont rencontrés
+                  (1998), le film You’ve got a mail sort sur le grand écran. Un
+                  film dans lequel Tom Hanks et Meg Ryan incarnent deux
+                  libraires rivaux. Les deux protagonistes vont tomber l’un de
+                  l’autre, sans le savoir ils entament une relation épistolaire
+                  l’un avec l’autre en échangeant des mails. Ce film est un
+                  remake du film The shop around the corner sorti en 1940 qui
+                  reposait déjà sur le même concept, mais transposé à son
+                  époque. Les échanges anonymes se faisaient grâce aux petites
+                  annonces.
+                </p>
+              </div>
+            </div>
+            <div class="content_text"> -->
+              <p>
+                Sur ICQ chaque utilisateur avait comme identifiant une suite de
+                chiffre unique. Cet identifiant était tout simplement appelé
+                “numéro ICQ”, il permettait un certain niveau d’anonymat pour la
+                personne qui se trouvait derrière le numéro. Sur ICQ Il n’y
+                avait donc pas de photo de profil ni de prénom/pseudo, seuls les
+                échanges par textes écrits permettaient de se démarquer du reste
+                des utilisateurs. On observe une retour de l’écrit et de la
+                relation épistolaire, il y a des gens qui n’ont jamais autant
+                écrit qu’à cette époque.
+              </p>
+              <p>
+                <span></span>Ces plateformes n’étaient pas destinées en premier
+                lieu à la création de relations matrimoniales. Mais comme pour
+                les agences matrimoniales, les couples qui se rencontraient via
+                ces plateformes de discussions dématérialisées étaient perçues
+                comme des rencontres bizarres.
+              </p>
+            </div>
+            <div class="content_citation">
+              <p>
+                “La cour est une interaction sociale formelle, qui s’organise
+                autour de restrictions sexuelles imposées par les familles et le
+                clergé. [...] au Moyen Âge, elle correspond, au comportement
+                formelle ritualisé et adopté par le chevalier [...] envers une
+                dame”
+              </p>
+            </div>
+
+            <div class="content_text">
+              <p>
+                <span></span>La même année que mes parents se sont rencontrés
+                (1998), le film You’ve got a mail sort sur le grand écran. Un
+                film dans lequel Tom Hanks et Meg Ryan incarnent deux libraires
+                rivaux. Les deux protagonistes vont tomber l’un de l’autre, sans
+                le savoir ils entament une relation épistolaire l’un avec
+                l’autre en échangeant des mails. Ce film est un remake du film
+                The shop around the corner sorti en 1940 qui reposait déjà sur
+                le même concept, mais transposé à son époque. Les échanges
+                anonymes se faisaient grâce aux petites annonces.
+              </p>
+              <p class="content_text_end">
+                <span></span>La mécanique de ces 2 films pouvait exister à
+                l’époque car le visuel (l’apparence de la personne) n’était pas
+                le plus important, elle passait dans un second temps. Les
+                personnes pouvaient débuter la relation à distance sans avoir eu
+                un avant goût de leurs apparences respectives. Aujourd’hui, le
+                visuel est redevenu le critère principal avant l’engagement
+                d’une conversation avec un inconnu. Des films comme les deux
+                cités précédemment ne pourraient plus exister. D’ailleurs aucun
+                remake de You’ve got a mail n’a vu encore le jour à notre
+                époque.
               </p>
             </div>
           </div>
         </div>
-        <div class="container app_footer">
-          <h2>Bibliographie</h2>
+
+        <div class="container app_content" id="part-2">
+          <div class="content_title">
+            <h1>1. Evolution des espaces et modes de rencontre</h1>
+          </div>
+          <div class="content_small">
+            <div class="content_number">
+              <p>1.1.0</p>
+            </div>
+
+            <div class="content_text">
+              <div class="content_title">
+                <h2>Rencontres traditionnelles</h2>
+              </div>
+              <p>
+                La démocratisation de l'arrivée des ordinateurs avec internet
+                dans les foyers ont permis la popularisation des plateformes de
+                messagerie instantanés. 1996 ils étaient plus de 36 millions de
+                personnes à être connectés sur le réseau internet. En
+                comparaison, nous sommes aujourd'hui à plus de 5,3 milliards.
+              </p>
+              <p>
+                <span></span>Donc fait encore “rare” en 1998 Mes 2 parents
+                possédaient tous les deux un ordinateur ainsi qu'une connexion
+                internet. Après leurs divorces respectifs ils ont rejoint tous
+                les deux les plateformes de messageries instantanées, notamment
+                sur ICQ, où il se sont rencontrés. Mon père s’était acheté un
+                modèle de chez Compaq et ma mère avait opté pour un ordinateur
+                Gateway dont l’on peut voir dans le motif du packaging une sorte
+                de signe annonciateur de sa future venue en Suisse.
+              </p>
+              <p>
+                <span></span>Les plateformes de messageries instantanées ont
+                permis pour la première fois de chatter en temps réel avec des
+                personnes à distance, ils offraient la possibilité de dépasser
+                les frontières géographiques. Des plateformes comme ICQ (I seek
+                you) ou encore AOL Instant Messenger se sont imposées sur le
+                marché de la communication et ont permis la démocratisation de
+                ces services qui avaient l’avantage d’être gratuits,
+                contrairement au téléphone. Dans les années 2000 la célèbre
+                plateforme MSN Messenger deviendra une référence avec ses
+                émoticônes animés et son fameux wizz. L’utilisateur pouvait
+                “wizzer” son correspondant, c'est-à-dire faire vibrer la fenêtre
+                celui-ci pour le rappeler de regarder la conversation.
+              </p>
+              <p>
+                <span></span>Ces plateformes sont les ancêtres de services comme
+                Whatsapp ou encore Messenger qui sont aujourd’hui utilisés de
+                tous.
+              </p>
+              <p>
+                <span></span>Avant l'arrivée d’ICQ et d’AIM ils existaient des
+                plateformes de communication plus complexes dans leur
+                fonctionnement qui était réservé à des groupes de personnes
+                restreints comme les chercheurs et les passionnés
+                d'informatique.
+              </p>
+              <p>
+                <span></span>La particularité d’ICQ Une des premières
+                plateformes qui permettait à ses utilisateurs de chatter avec
+                des personnes inconnues de manière aléatoire. L’interface
+                proposait une fonction qui s’appelait chat random, cette
+                fonction mettait l’utilisateur en relation directe avec une des
+                personnes qui se trouvaient alors en ligne.
+              </p>
+              <p>
+                <span></span>Sur ICQ chaque utilisateur avait comme identifiant
+                une suite de chiffre unique. Cet identifiant était tout
+                simplement appelé “numéro ICQ”, il permettait un certain niveau
+                d’anonymat pour la personne qui se trouvait derrière le numéro.
+                Sur ICQ Il n’y avait donc pas de photo de profil ni de
+                prénom/pseudo, seuls les échanges par textes écrits permettaient
+                de se démarquer du reste des utilisateurs. On observe une retour
+                de l’écrit et de la relation épistolaire, il y a des gens qui
+                n’ont jamais autant écrit qu’à cette époque.
+              </p>
+              <p>
+                <span></span>Ces plateformes n’étaient pas destinées en premier
+                lieu à la création de relations matrimoniales. Mais comme pour
+                les agences matrimoniales, les couples qui se rencontraient via
+                ces plateformes de discussions dématérialisées étaient perçues
+                comme des rencontres bizarres.
+              </p>
+              <p>
+                <span></span>La même année que mes parents se sont rencontrés
+                (1998), le film You’ve got a mail sort sur le grand écran. Un
+                film dans lequel Tom Hanks et Meg Ryan incarnent deux libraires
+                rivaux. Les deux protagonistes vont tomber l’un de l’autre, sans
+                le savoir ils entament une relation épistolaire l’un avec
+                l’autre en échangeant des mails. Ce film est un remake du film
+                The shop around the corner sorti en 1940 qui reposait déjà sur
+                le même concept, mais transposé à son époque. Les échanges
+                anonymes se faisaient grâce aux petites annonces.
+              </p>
+              <p>
+                <span></span>La mécanique de ces 2 films pouvait exister à
+                l’époque car le visuel (l’apparence de la personne) n’était pas
+                le plus important, elle passait dans un second temps. Les
+                personnes pouvaient débuter la relation à distance sans avoir eu
+                un avant goût de leurs apparences respectives. Aujourd’hui, le
+                visuel est redevenu le critère principal avant l’engagement
+                d’une conversation avec un inconnu. Des films comme les deux
+                cités précédemment ne pourraient plus exister. D’ailleurs aucun
+                remake de You’ve got a mail n’a vu encore le jour à notre
+                époque.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container app_content" id="part-3">
+          <div class="content_title">
+            <h1>2. Science du matching et le rôle de l’interface</h1>
+          </div>
+          <div class="content_small">
+            <div class="content_number">
+              <p>2.1.0</p>
+            </div>
+
+            <div class="content_text">
+              <div class="content_title">
+                <h2>Rencontres traditionnelles</h2>
+              </div>
+              <p>
+                La démocratisation de l'arrivée des ordinateurs avec internet
+                dans les foyers ont permis la popularisation des plateformes de
+                messagerie instantanés. 1996 ils étaient plus de 36 millions de
+                personnes à être connectés sur le réseau internet. En
+                comparaison, nous sommes aujourd'hui à plus de 5,3 milliards.
+              </p>
+              <p>
+                <span></span>Donc fait encore “rare” en 1998 Mes 2 parents
+                possédaient tous les deux un ordinateur ainsi qu'une connexion
+                internet. Après leurs divorces respectifs ils ont rejoint tous
+                les deux les plateformes de messageries instantanées, notamment
+                sur ICQ, où il se sont rencontrés. Mon père s’était acheté un
+                modèle de chez Compaq et ma mère avait opté pour un ordinateur
+                Gateway dont l’on peut voir dans le motif du packaging une sorte
+                de signe annonciateur de sa future venue en Suisse.
+              </p>
+              <p>
+                <span></span>Les plateformes de messageries instantanées ont
+                permis pour la première fois de chatter en temps réel avec des
+                personnes à distance, ils offraient la possibilité de dépasser
+                les frontières géographiques. Des plateformes comme ICQ (I seek
+                you) ou encore AOL Instant Messenger se sont imposées sur le
+                marché de la communication et ont permis la démocratisation de
+                ces services qui avaient l’avantage d’être gratuits,
+                contrairement au téléphone. Dans les années 2000 la célèbre
+                plateforme MSN Messenger deviendra une référence avec ses
+                émoticônes animés et son fameux wizz. L’utilisateur pouvait
+                “wizzer” son correspondant, c'est-à-dire faire vibrer la fenêtre
+                celui-ci pour le rappeler de regarder la conversation.
+              </p>
+              <p>
+                <span></span>Ces plateformes sont les ancêtres de services comme
+                Whatsapp ou encore Messenger qui sont aujourd’hui utilisés de
+                tous.
+              </p>
+              <p>
+                <span></span>Avant l'arrivée d’ICQ et d’AIM ils existaient des
+                plateformes de communication plus complexes dans leur
+                fonctionnement qui était réservé à des groupes de personnes
+                restreints comme les chercheurs et les passionnés
+                d'informatique.
+              </p>
+              <p>
+                <span></span>La particularité d’ICQ Une des premières
+                plateformes qui permettait à ses utilisateurs de chatter avec
+                des personnes inconnues de manière aléatoire. L’interface
+                proposait une fonction qui s’appelait chat random, cette
+                fonction mettait l’utilisateur en relation directe avec une des
+                personnes qui se trouvaient alors en ligne.
+              </p>
+              <p>
+                <span></span>Sur ICQ chaque utilisateur avait comme identifiant
+                une suite de chiffre unique. Cet identifiant était tout
+                simplement appelé “numéro ICQ”, il permettait un certain niveau
+                d’anonymat pour la personne qui se trouvait derrière le numéro.
+                Sur ICQ Il n’y avait donc pas de photo de profil ni de
+                prénom/pseudo, seuls les échanges par textes écrits permettaient
+                de se démarquer du reste des utilisateurs. On observe une retour
+                de l’écrit et de la relation épistolaire, il y a des gens qui
+                n’ont jamais autant écrit qu’à cette époque.
+              </p>
+              <p>
+                <span></span>Ces plateformes n’étaient pas destinées en premier
+                lieu à la création de relations matrimoniales. Mais comme pour
+                les agences matrimoniales, les couples qui se rencontraient via
+                ces plateformes de discussions dématérialisées étaient perçues
+                comme des rencontres bizarres.
+              </p>
+              <p>
+                <span></span>La même année que mes parents se sont rencontrés
+                (1998), le film You’ve got a mail sort sur le grand écran. Un
+                film dans lequel Tom Hanks et Meg Ryan incarnent deux libraires
+                rivaux. Les deux protagonistes vont tomber l’un de l’autre, sans
+                le savoir ils entament une relation épistolaire l’un avec
+                l’autre en échangeant des mails. Ce film est un remake du film
+                The shop around the corner sorti en 1940 qui reposait déjà sur
+                le même concept, mais transposé à son époque. Les échanges
+                anonymes se faisaient grâce aux petites annonces.
+              </p>
+              <p>
+                <span></span>La mécanique de ces 2 films pouvait exister à
+                l’époque car le visuel (l’apparence de la personne) n’était pas
+                le plus important, elle passait dans un second temps. Les
+                personnes pouvaient débuter la relation à distance sans avoir eu
+                un avant goût de leurs apparences respectives. Aujourd’hui, le
+                visuel est redevenu le critère principal avant l’engagement
+                d’une conversation avec un inconnu. Des films comme les deux
+                cités précédemment ne pourraient plus exister. D’ailleurs aucun
+                remake de You’ve got a mail n’a vu encore le jour à notre
+                époque.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      <!---------------FIN MAIN---------------->
+      <!---------------DEBUT FOOTER---------------->
+      <div class="app_footer">
+        <div class="footer_header">
+          <h2 id="bibliography-button">Bibliographie</h2>
+        </div>
+        <div class="footer_content">
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+          <div class="footer_item"></div>
+        </div>
+      </div>
+      <!---------------FIN FOOTER---------------->
     </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
