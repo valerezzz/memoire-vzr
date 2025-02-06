@@ -13,9 +13,29 @@
   src: url("../fonts/HelveticaNeueLTStd-Roman.otf");
 }
 
+@font-face {
+  font-family: "EditorialNew";
+  src: url("../fonts/PPEditorialNew-Regular.otf");
+}
+
 :root {
   overscroll-behavior: none;
   touch-action: none;
+}
+
+p::selection {
+  background-color: black;
+  color: white;
+}
+
+h1::selection {
+  background-color: black;
+  color: white;
+}
+
+h2::selection {
+  background-color: black;
+  color: white;
 }
 
 body {
@@ -61,6 +81,7 @@ li ul {
 
 .black_box {
   text-transform: uppercase;
+  font-size: 0.8rem;
   line-height: 1;
   padding: 7px 8px;
   background-color: black;
@@ -74,7 +95,7 @@ li ul {
   position: fixed;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1001;
   color: white;
   text-transform: uppercase;
   padding: 7.5px 10px;
@@ -85,7 +106,9 @@ li ul {
 .header_content {
   display: flex;
   justify-content: space-between;
+
   align-items: center;
+  background-color: black;
 }
 
 #info-button {
@@ -134,7 +157,7 @@ li ul {
 /**************************************** MAIN ****************************************/
 
 .app_main {
-  width: 300%;
+  width: 400%;
   height: calc(100% - 50px);
   background-color: white;
 
@@ -158,7 +181,22 @@ li ul {
   touch-action: none;
 
   color: black;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 245, 245);
+}
+
+.content_title_first {
+  grid-column: 1 / 13;
+  width: 100%;
+  margin: 50px 0px;
+  display: flex;
+  height: calc(100vh - 150px);
+}
+
+.content_title_first h1 {
+  font-size: 8rem;
+  font-weight: 500;
+  font-family: "EditorialNew";
+  text-align: left;
 }
 
 .content_title {
@@ -167,13 +205,14 @@ li ul {
 }
 
 .content_title h1 {
-  font-size: 7rem;
+  font-size: 8rem;
 
-  line-height: 1;
-  margin-top: 40px;
+  line-height: 0.9;
+  margin-top: 60px;
   font-weight: 500;
-  text-transform: uppercase;
+
   margin-bottom: 40px;
+  font-family: "EditorialNew";
 }
 
 .content_number p {
@@ -187,6 +226,60 @@ li ul {
 .content_concept {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+/**************************************** IMAGES ****************************************/
+
+.content_medium .content_images {
+  width: 100%;
+  grid-column: 3 / 13;
+  margin: 20px 0px;
+  display: flex;
+  gap: 20px;
+}
+
+.size-1 {
+  width: 100%;
+}
+
+.size-1-5 {
+  width: 75%;
+}
+
+.size-2 {
+  width: calc(50% - 10px);
+}
+
+.size-3 {
+  width: calc(33% - 10px);
+}
+
+.size-4 {
+  width: calc(25% - 10px);
+}
+
+.content_medium .content_images img {
+  object-fit: cover;
+  margin: 60px 0px;
+}
+
+.content_small .content_images {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  gap: 20px;
+  width: 100%;
+}
+
+.img_flex_column {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.content_small .content_images img {
+  object-fit: cover;
 }
 
 /**************************************** MEDIUM ****************************************/
@@ -204,7 +297,11 @@ li ul {
 .content_medium .content_text {
   grid-column: 3 / 13;
   width: auto;
-  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content_medium .content_text p {
@@ -267,7 +364,7 @@ li ul {
 
 .content_small .content_text p {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .content_small .content_text span {
@@ -313,10 +410,12 @@ li ul {
 .content_citation {
   grid-column: 5/ 13;
   margin-bottom: 40px;
+  font-family: "EditorialNew";
 }
 
 .content_citation p {
   font-size: 2rem;
+  line-height: 1.2;
   font-weight: 500;
   font-style: italic;
 }
