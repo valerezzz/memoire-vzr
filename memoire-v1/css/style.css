@@ -43,7 +43,6 @@ body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   overscroll-behavior: none;
   touch-action: none;
-  filter: invert(1);
 }
 
 body::-webkit-scrollbar {
