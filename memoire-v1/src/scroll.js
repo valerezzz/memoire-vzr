@@ -43,7 +43,9 @@ export default class ScrollManager {
 
             if (this.translatePercentage < 0) {
               console.log("Part 1 !!!!!!!!!!");
+              this.isScrollingHorizontally = false;
               this.appMain.style.transform = `translateX(0%)`;
+              this.part1.style.overflowY = "auto";
               this.currentPart = 1;
             }
 
@@ -94,8 +96,6 @@ export default class ScrollManager {
 
               console.log("Part 2 !!!!!!!!!!");
             }
-
-            // console.log(this.translatePercentage);
           }
 
           this.part2.addEventListener("scroll", () => {
@@ -105,7 +105,16 @@ export default class ScrollManager {
                 (this.part2.scrollHeight - containerHeight)) *
               100;
 
-            // console.log(scrollPercentage);
+            if (
+              this.part2.scrollTop === 0 &&
+              this.isScrollingHorizontally === false
+            ) {
+              this.isScrollingHorizontally = true;
+              this.translatePercentage = 25;
+              this.currentPart = 1;
+              console.log(this.currentPart);
+              console.log("Part 2 SCROLLER !!!!!!!!!!");
+            }
 
             if (
               scrollPercentage > 99.9 &&
@@ -113,8 +122,6 @@ export default class ScrollManager {
             ) {
               this.isScrollingHorizontally = true;
               this.translatePercentage = scrollPercentage - 100 + 25;
-
-              // console.log(this.translatePercentage);
             }
           });
 
@@ -142,8 +149,6 @@ export default class ScrollManager {
 
               console.log("Part 3 !!!!!!!!!!");
             }
-
-            // console.log(this.translatePercentage);
           }
 
           this.part3.addEventListener("scroll", () => {
@@ -153,7 +158,7 @@ export default class ScrollManager {
                 (this.part3.scrollHeight - containerHeight)) *
               100;
 
-            // console.log(scrollPercentage);
+            console.log(scrollPercentage);
 
             if (
               scrollPercentage > 99.9 &&
@@ -161,8 +166,17 @@ export default class ScrollManager {
             ) {
               this.isScrollingHorizontally = true;
               this.translatePercentage = scrollPercentage - 100 + 50;
+            }
 
-              // console.log(this.translatePercentage);
+            if (
+              this.part3.scrollTop === 0 &&
+              this.isScrollingHorizontally === false
+            ) {
+              this.isScrollingHorizontally = true;
+              this.translatePercentage = 50;
+              this.currentPart = 2;
+              console.log(this.currentPart);
+              console.log("Part 3 SCROLLER !!!!!!!!!!");
             }
           });
 
@@ -173,6 +187,37 @@ export default class ScrollManager {
           this.part1.style.overflowY = "hidden";
           this.part2.style.overflowY = "hidden";
           this.part3.style.overflowY = "hidden";
+
+          if (this.isScrollingHorizontally) {
+            this.appMain.style.transform = `translateX(-${this.translatePercentage}%)`;
+            this.part4.style.overflowY = "hidden";
+
+            if (this.translatePercentage < 75) {
+              this.isScrollingHorizontally = false;
+              this.appMain.style.transform = `translateX(-75%)`;
+              this.part4.style.overflowY = "auto";
+              this.currentPart = 4;
+            }
+          }
+
+          this.part4.addEventListener("scroll", () => {
+            const containerHeight = this.part1.clientHeight;
+            const scrollPercentage =
+              (this.part4.scrollTop /
+                (this.part4.scrollHeight - containerHeight)) *
+              100;
+
+            if (
+              this.part4.scrollTop === 0 &&
+              this.isScrollingHorizontally === false
+            ) {
+              this.isScrollingHorizontally = true;
+              this.translatePercentage = 75;
+              this.currentPart = 3;
+              console.log("Part 4 SCROLLER !!!!!!!!!!");
+            }
+          });
+
           break;
       }
     });

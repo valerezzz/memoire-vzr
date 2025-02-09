@@ -44,7 +44,7 @@ export default class Interface {
   }
 
   indexClose() {
-    this.index.style.left = "-300px";
+    this.index.style.left = "-50vw";
   }
 
   bibliographyOpen() {
