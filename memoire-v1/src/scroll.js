@@ -20,7 +20,7 @@ export default class ScrollManager {
     console.log("ScrollManager initialized");
 
     window.addEventListener("wheel", (event) => {
-      console.log("Direction Y:", event.deltaY);
+      // console.log("Direction Y:", event.deltaY);
 
       this.translatePercentage += event.deltaY * this.scrollSpeed;
 
@@ -32,6 +32,7 @@ export default class ScrollManager {
           this.part4.style.overflowY = "hidden";
           if (this.isScrollingHorizontally) {
             this.appMain.style.transform = `translateX(-${this.translatePercentage}%)`;
+            this.part1.style.overflowY = "hidden";
 
             if (this.translatePercentage > 25) {
               this.isScrollingHorizontally = false;
@@ -40,7 +41,13 @@ export default class ScrollManager {
               this.currentPart = 2;
             }
 
-            console.log(this.translatePercentage);
+            if (this.translatePercentage < 0) {
+              console.log("Part 1 !!!!!!!!!!");
+              this.appMain.style.transform = `translateX(0%)`;
+              this.currentPart = 1;
+            }
+
+            // console.log(this.translatePercentage);
           }
 
           this.part1.addEventListener("scroll", () => {
@@ -50,7 +57,7 @@ export default class ScrollManager {
                 (this.part1.scrollHeight - containerHeight)) *
               100;
 
-            console.log(scrollPercentage);
+            // console.log(scrollPercentage);
 
             if (
               scrollPercentage > 99.9 &&
@@ -59,7 +66,7 @@ export default class ScrollManager {
               this.isScrollingHorizontally = true;
               this.translatePercentage = scrollPercentage - 100;
 
-              console.log(this.translatePercentage);
+              // console.log(this.translatePercentage);
             }
           });
 
@@ -71,7 +78,7 @@ export default class ScrollManager {
           this.part4.style.overflowY = "hidden";
           if (this.isScrollingHorizontally) {
             this.appMain.style.transform = `translateX(-${this.translatePercentage}%)`;
-
+            this.part2.style.overflowY = "hidden";
             if (this.translatePercentage > 50) {
               this.isScrollingHorizontally = false;
               this.appMain.style.transform = `translateX(-50%)`;
@@ -80,7 +87,15 @@ export default class ScrollManager {
               this.currentPart = 3;
             }
 
-            console.log(this.translatePercentage);
+            if (this.translatePercentage < 25) {
+              this.isScrollingHorizontally = false;
+              this.appMain.style.transform = `translateX(-25%)`;
+              this.currentPart = 2;
+
+              console.log("Part 2 !!!!!!!!!!");
+            }
+
+            // console.log(this.translatePercentage);
           }
 
           this.part2.addEventListener("scroll", () => {
@@ -90,7 +105,7 @@ export default class ScrollManager {
                 (this.part2.scrollHeight - containerHeight)) *
               100;
 
-            console.log(scrollPercentage);
+            // console.log(scrollPercentage);
 
             if (
               scrollPercentage > 99.9 &&
@@ -99,7 +114,7 @@ export default class ScrollManager {
               this.isScrollingHorizontally = true;
               this.translatePercentage = scrollPercentage - 100 + 25;
 
-              console.log(this.translatePercentage);
+              // console.log(this.translatePercentage);
             }
           });
 
@@ -111,7 +126,7 @@ export default class ScrollManager {
           this.part4.style.overflowY = "hidden";
           if (this.isScrollingHorizontally) {
             this.appMain.style.transform = `translateX(-${this.translatePercentage}%)`;
-
+            this.part3.style.overflowY = "hidden";
             if (this.translatePercentage > 75) {
               this.isScrollingHorizontally = false;
               this.appMain.style.transform = `translateX(-75%)`;
@@ -120,7 +135,15 @@ export default class ScrollManager {
               this.currentPart = 4;
             }
 
-            console.log(this.translatePercentage);
+            if (this.translatePercentage < 50) {
+              this.isScrollingHorizontally = false;
+              this.appMain.style.transform = `translateX(-50%)`;
+              this.currentPart = 3;
+
+              console.log("Part 3 !!!!!!!!!!");
+            }
+
+            // console.log(this.translatePercentage);
           }
 
           this.part3.addEventListener("scroll", () => {
@@ -130,7 +153,7 @@ export default class ScrollManager {
                 (this.part3.scrollHeight - containerHeight)) *
               100;
 
-            console.log(scrollPercentage);
+            // console.log(scrollPercentage);
 
             if (
               scrollPercentage > 99.9 &&
@@ -139,7 +162,7 @@ export default class ScrollManager {
               this.isScrollingHorizontally = true;
               this.translatePercentage = scrollPercentage - 100 + 50;
 
-              console.log(this.translatePercentage);
+              // console.log(this.translatePercentage);
             }
           });
 
