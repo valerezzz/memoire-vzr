@@ -54,13 +54,8 @@ a {
   color: white;
 }
 
-li {
-  padding-bottom: 10px;
-}
-
 li ul {
   padding-left: 20px;
-  padding-top: 10px;
 }
 
 .container {
@@ -106,7 +101,6 @@ li ul {
 .header_content {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   background-color: black;
   font-size: 0.85rem;
@@ -119,7 +113,7 @@ li ul {
 /**************************************** INDEX ****************************************/
 
 .app_index {
-  width: 50vw;
+  width: 30vw;
   height: 100%;
   padding: 0;
   background-color: white;
@@ -144,11 +138,18 @@ li ul {
   width: 100%;
   height: 100%;
   background-color: black;
+  overflow-y: auto;
   color: white;
+}
+
+.index_content::-webkit-scrollbar {
+  display: none;
 }
 
 .index_list {
   display: block;
+  background-color: black;
+  margin: 65px 40px;
 }
 
 .index_sublist {
@@ -173,14 +174,12 @@ li ul {
 .app_content {
   width: 100%;
   height: 100%;
-
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  scroll-behavior: smooth; /* Pour un défilement fluide */
+  scroll-behavior: smooth;
   overscroll-behavior: none;
   touch-action: none;
-
   color: black;
   background-color: rgb(255, 255, 255);
 }
